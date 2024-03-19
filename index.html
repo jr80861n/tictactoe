@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Welcome to Tic Tac Toe</h1>
+    <button id="instruction-button">Show Instructions</button> <!-- Button to show instructions -->
+    <div id="instructions-modal" class="modal"> <!-- Instructions modal -->
+      <!-- Instructions content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Instructions:</h3>
+          <ul>
+            <li><b>Objective:</b> The goal of Tic Tac Toe is to be the first player to get three of your marks in a row (horizontally, vertically, or diagonally).</li>
+            <li><b>Game Setup:</b> The game is played on a 3x3 grid. One player is assigned 'X' and the other player is assigned 'O'.</li>
+            <li><b>Taking Turns:</b> Players take turns placing their mark (either 'X' or 'O') in an empty square on the grid.</li>
+            <li><b>Winning Conditions:</b> A player wins if they have three of their marks in a row, column, or diagonal.</li>
+            <li><b>Draw:</b> If all squares are filled without a winner, the game is a draw.</li>
+            <li><b>Restarting the Game:</b> Players can restart the game by clicking on the restart button.</li>
+          </ul>
+      </div>
+    </div>
+    <div id="player-turn">Player X's Turn</div>
+    <div id="scoreboard">
+      <div class="score">X wins: <span id="x-wins">0</span></div>
+      <div class="score">O wins: <span id="o-wins">0</span></div>
+    </div>
+    <div id="board">
+     <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <!-- Your 9 cells here -->
+    </div>
+    <button id="restart-button">Restart Game</button> 
+    <button id="undo-button">Undo Last Move</button>
+    <button id="game-reset-button">Reset Game</button>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
